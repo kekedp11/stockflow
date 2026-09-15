@@ -1,0 +1,201 @@
+.reports-page {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  padding: 32px;
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.reports-header {
+  margin-bottom: 30px;
+}
+
+.reports-header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.reports-header p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* CONTENT */
+
+.reports-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* SECTION */
+
+.reports-section {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.section-header {
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.section-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* SUMMARY GRID */
+
+.report-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
+
+.report-card {
+  min-width: 0;
+  min-height: 110px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.report-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.report-card strong {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #0f172a;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* BEST SELLING */
+
+.best-selling-card {
+  background: #f1f5f9;
+}
+
+.best-selling-card strong {
+  font-size: 20px;
+}
+
+.report-card small {
+  display: block;
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ERROR */
+
+.reports-error {
+  padding: 13px 15px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+  color: #b91c1c;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .reports-page {
+    padding: 28px 24px;
+  }
+
+  .report-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .reports-page {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 20px 14px;
+  }
+
+  .reports-header {
+    margin-bottom: 22px;
+  }
+
+  .reports-header h1 {
+    font-size: 24px;
+  }
+
+  .reports-header p {
+    font-size: 13px;
+  }
+
+  .reports-content {
+    gap: 16px;
+  }
+
+  .reports-section {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .section-header {
+    margin-bottom: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 17px;
+  }
+
+  .report-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .report-card {
+    min-height: 100px;
+    padding: 17px;
+  }
+
+  .report-card strong {
+    font-size: 22px;
+  }
+
+  .best-selling-card strong {
+    font-size: 19px;
+  }
+}
